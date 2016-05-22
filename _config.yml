@@ -6,16 +6,55 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Frozen Cloud
+SEOTitle: 冻云的世界 | FC's World
+header-img: img/home-bg.jpg
+email: sishuiliunian321@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  时间带走一切，那么用什么证明我们存在过。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://frozencloud.cc" # the base hostname & protocol for your site
+
+
+# SNS settings
+RSS: false
+#weibo_username:     frozencloud
+#zhihu_username:     frozencloud
+#twitter_username:  frozencloud
+#facebook_username:  frozencloud
+# linkedin_username:  frozencloud
+github_username:  frozencloud
 
 # Build settings
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true  
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+#gems: [jekyll-paginate]
+
 markdown: kramdown
+kramdown:
+  input: GFM
+
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "原谅我无法用言语表达自己。"
+sidebar-avatar: /img/fc.jpg 
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1 
+
+# Friends
+friends: [
+    {
+        title: "Example Friends",
+        href: "#"
+    },{
+        title: "Example Friends",
+        href: "#"
+    }
+]
